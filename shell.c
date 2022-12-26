@@ -11,7 +11,7 @@ int shl_exec(char **argv, char **av)
     pid_t pid;
 
     int status;
-    char path[200] = {"/bin/"};
+    // char path[200] = {"/bin/"};
 
     /*If no arg is parsed to the prompt return 1 as a status then reprompt*/
     if (argv[0] == NULL)
@@ -28,9 +28,9 @@ int shl_exec(char **argv, char **av)
     /*entering the child process to perform the execution*/
     if (pid == 0)
     {
-        argv[0] = strcat(path, argv[0]);
+        // argv[0] = strcat(path, argv[0]);
 
-        if (execve(argv[0], argv, NULL) == -1)
+        if (execvp(argv[0], argv) == -1)
         {
             /*Putting the name of the shell ran from the commandline stderr*/
             perror(av[0]);
