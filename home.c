@@ -19,7 +19,7 @@ void init_shell(char **argv)
     printf("\t2. GAMES");
     printf("\t3. HELP\n");
     printf("\n");
-    printf("press 1\\2\\3 to the shell option\n");
+    printf("press 1\\2\\3 to select shell option\n");
 }
 
 /**
