@@ -1,5 +1,4 @@
-FROM alphine
-COPY . /app/files.zip /bin/
+FROM ubuntu
+COPY . /zip/hsh /zip/publish /zip/tic-tac /bin/
 WORKDIR /bin/
-RUN unzip /bin/files.zip -d /bin
 CMD /bin/hsh

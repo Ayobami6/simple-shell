@@ -61,3 +61,19 @@ publish
 
 ![push](/imgs/f5.png)
 
+## Run With docker 
+
+Download and install docker on your PC
+
+[Watch this Youtube movie to install docker on your machine](https://youtu.be/8C0LOqynLes)
+
+
+Run
+```bash
+docker login
+```
+Pull the shell docker image with
+
+```bash
+docker pull ayobami6/simple-shell
+```
