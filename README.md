@@ -57,5 +57,7 @@ Plublish all changes made to the specific git repo to github remote
 ```bash
 publish
 ```
-![publis](/imgs/f4.png)
+![publish](/imgs/f4.png)
+
+![push](/imgs/f5.png)
 
