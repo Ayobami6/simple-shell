@@ -1,0 +1,56 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+char board[3][3] = {
+    {' ', ' ', ' '},
+    {' ', ' ', ' '},
+    {' ', ' ', ' '}
+};
+
+char player = 'X';
+
+void draw_board()
+{
+    printf("\n");
+    printf(" %c | %c | %c \n", board[0][0], board[0][1], board[0][2]);
+    printf("-----------\n");
+    printf(" %c | %c | %c \n", board[1][0], board[1][1], board[1][2]);
+    printf("-----------\n");
+    printf(" %c | %c | %c \n", board[2][0], board[2][1], board[2][2]);
+}
+
+void player_turn()
+{
+    int row, col;
+    printf("Player %c turn.\n", player);
+    printf("Enter row and column: ");
+    scanf("%d %d", &row, &col);
+    row--;
+    col--;
+
+    if (board[row][col] != ' ')
+    {
+        printf("Invalid move! Try again.\n");
+        player_turn();
+    }
+    else
+    {
+        board[row][col] = player;
+        if (player == 'X')
+            player = 'O';
+        else
+            player = 'X';
+    }
+}
+
+int main()
+{
+    draw_board();
+    while (1)
+    {
+        player_turn();
+        draw_board();
+    }
+
+    return 0;
+}
