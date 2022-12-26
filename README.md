@@ -8,6 +8,7 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/Ayobami6/simple-shell?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/Ayobami6/simple-shell?style=social)
 ![GitHub contributors](https://img.shields.io/github/contributors/Ayobami6/simple-shell)
+![Github Release](https://img.shields.io/github/v/release/Ayobami6/simple-shell)
 
 ## Smart-Shell
 
@@ -77,3 +78,23 @@ Pull the shell docker image with
 ```bash
 docker pull ayobami6/simple-shell
 ```
+
+Run the docker image interactively
+```bash
+docker run -it ayobami6/simple-shell:v1.0
+```
+or
+
+```bash
+docker run -it ayobami6/simple-shell
+```
+## Contributing 
+
+You are welcome to create an issue if there are bugs which most definitely there are, any issue will be appreciated and
+carefully looked in to.
+Also, if you want to have your C game(s) included in the shell you can fork and create a pull request by adding your game function
+inside the games directory and your game will be included with your full name. 
+
+## Incoming 
+V1.1
+Features still unknown..
