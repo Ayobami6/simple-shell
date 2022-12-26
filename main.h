@@ -25,18 +25,19 @@ typedef struct options
 typedef struct builtin
 {
 	char *name;
-	int (*fp)();
+	int (*fp)(char **argv);
 } builtin_t;
 
 int builtin_call(char **argv, char **av);
-int shl_exit();
-int shl_help();
+int shl_exit(char **argv);
+int shl_help(char **argv);
 void init_shell(char **argv);
-int clear_all();
+int clear_all(char **arhv);
 
 int shl_exec(char **argv, char **av);
 int shl_loop(char **av);
-int games();
+int games(char **argv);
 int option_call(char **argv, char **av);
+int shl_cd(char **argv);
 
 #endif

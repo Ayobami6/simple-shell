@@ -19,8 +19,10 @@ void init_shell(char **argv)
     printf("press 1\\2\\3 to the shell option\n");
 }
 
-int games()
+int games(char **argv)
 {
+    (void)(argv);
+
     clear();
     printf("\t\t GAMES PAGE\n");
     printf("\n1. Game-1");
