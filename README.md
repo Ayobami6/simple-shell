@@ -11,10 +11,25 @@
 ## Smart-Shell
 
 
-![home](/imgs/home.png)
+![home](/imgs/front.png)
 
 
 ## Installation
+### Use this to download to the bin directory
+### Note: Must have root access
 ```commandline
 wget -O /bin/exec.zip https://github.com/Ayobami6/simple-shell/blob/master/exec.zip?raw=true
 ```
+### Unzip the downloaded zipped files in the bin directory in your root
+```commandline
+unzip /bin/exec.zip
+```
+
+## Usage 
+### type hsh to run the smart shell
+```bash
+hsh
+```
+Choose 1 or 2 or 3 to select smart shell options
+
+
