@@ -11,7 +11,6 @@ int shl_exec(char **argv, char **av)
     pid_t pid;
 
     int status;
-    // char path[200] = {"/bin/"};
 
     /*If no arg is parsed to the prompt return 1 as a status then reprompt*/
     if (argv[0] == NULL)
@@ -28,7 +27,6 @@ int shl_exec(char **argv, char **av)
     /*entering the child process to perform the execution*/
     if (pid == 0)
     {
-        // argv[0] = strcat(path, argv[0]);
 
         if (execvp(argv[0], argv) == -1)
         {
@@ -41,9 +39,6 @@ int shl_exec(char **argv, char **av)
     else
     {
         wait(NULL);
-        // do
-        //     waitpid(pid, &status, WUNTRACED);
-        // while (!WIFEXITED(status) && !WIFSIGNALED(status));
     }
 
     return (-1);

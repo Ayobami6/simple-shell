@@ -1,5 +1,8 @@
 #include "main.h"
-
+/**
+ * init_shell - shell home page
+ * @argv: strings array
+ */
 void init_shell(char **argv)
 {
     clear();
@@ -19,13 +22,18 @@ void init_shell(char **argv)
     printf("press 1\\2\\3 to the shell option\n");
 }
 
+/**
+ * games - games page select game to play
+ * @argv: string of arrays
+ * Return: 1
+ */
 int games(char **argv)
 {
     (void)(argv);
 
     clear();
     printf("\t\t GAMES PAGE\n");
-    printf("\n1. Game-1");
+    printf("\n1. Game-1: tic-tac -> Enter tic-tac to play \t game by Ayobami Alaran");
     printf("\n");
 
     return (1);

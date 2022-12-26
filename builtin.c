@@ -13,6 +13,11 @@ int shl_exit(char **argv)
          "\ncreate a pull request on github or an issue..");
     return (0);
 }
+/**
+ * clear_all - clears the home screen
+ * @argv: strings array
+ * Return: 1
+ */
 int clear_all(char **argv)
 {
     (void)(argv);
@@ -68,6 +73,11 @@ int builtin_call(char **argv, char **av)
     return (shl_exec(argv, av));
 }
 
+/**
+ * shl_cd - changes the dir from the cl
+ * @argv: string arrays
+ * Return: 1
+*/
 int shl_cd(char **argv)
 {
     if (argv[1] == NULL)
