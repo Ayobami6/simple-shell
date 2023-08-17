@@ -28,15 +28,16 @@ if [ $user == "root" ]; then
 	ln -s /squashfs-root/AppRun /usr/bin/nvim
 	# install nvchad
 	 git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
-	 # install Ohmyzsh
-	 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
+	 
 	 # install syntax plugins and autosuggestion
 	 git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
 	 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
 	 # search and replace
 	 sed -i 's/plugins=(git)/plugins=(git zsh-autosuggestions zsh-syntax-highlighting)/' ~/.zshrc
 	 source ~/.zshrc 
+
+	 # install Ohmyzsh
+	 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 
 else
@@ -61,13 +62,14 @@ else
 	sudo ln -s /squashfs-root/AppRun /usr/bin/nvim
 	# install nvchad
 	 git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
-	 # install Ohmyzsh
-	 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
+	 
 	 # install syntax plugins and autosuggestion
 	 git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
 	 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
 	 # search and replace
 	 sed -i 's/plugins=(git)/plugins=(git zsh-autosuggestions zsh-syntax-highlighting)/' ~/.zshrc
-	 source ~/.zshrc 
+	 source ~/.zshrc
+
+	 # install Ohmyzsh
+	 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 fi
