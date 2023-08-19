@@ -6,7 +6,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git /root/.oh-my-
 # search and replace
 sed -i 's/plugins=(git)/plugins=(git zsh-autosuggestions zsh-syntax-highlighting)/' ~/.zshrc
 
-read -p "Do you want to set vi as alias for nvim? (Y/n)" ans
+read -p "Do you want to set vi as alias for nvim? (Y/n): " ans
 
 if [ $ans == "y" ] || [ $ans == "Y" ]; then
 	alias vi="nvim"
